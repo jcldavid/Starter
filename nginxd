@@ -1,0 +1,4 @@
+#! /bin/sh
+
+trap "nginx -s stop -p /d/nginx" exit
+nginx -p /d/nginx
